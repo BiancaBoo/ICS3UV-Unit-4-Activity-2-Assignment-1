@@ -23,20 +23,20 @@ func main() {
 
 	// Input loop
 	for {
-			fmt.Print("Enter an integer or zero (0) to end: ")
-			fmt.Scanln(&num)
+		fmt.Print("Enter an integer or zero (0) to end: ")
+		fmt.Scanln(&num)
 
-			// Stop if zero entered
-			if num == 0 {
-				break
-			}
+		// Stop if zero entered
+		if num == 0 {
+			break
+		}
 
-			// Check if number is inside or outside range
-			if num >= startRange && num <= endRange {
-				sumInside += num
-			} else {
-				sumOutside += num
-			}
+		// Check if number is inside or outside range
+		if num >= startRange && num <= endRange {
+			sumInside += num
+		} else {
+			sumOutside += num
+		}
 	}
 
 	// Output results
